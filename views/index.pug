@@ -1,0 +1,53 @@
+extends layout
+
+block content
+  h1= title
+  h2 1. Foundation
+  ul
+            li: p #{foundation.setupVartualOffice.label}
+                if(foundation.setupVartualOffice.completed)
+                  input(type='checkbox', name='completed', checked)
+                else
+                  input(type='checkbox', name='completed')
+            li: p #{foundation.setMissionAndVision.label}
+                if(foundation.setMissionAndVision.completed)
+                  input(type='checkbox', name='completed', checked)
+                else
+                  input(type='checkbox', name='completed')
+            li: p #{foundation.selectBussinessName.label}
+                if(foundation.selectBussinessName.completed)
+                  input(type='checkbox', name='completed', checked)
+                else
+                  input(type='checkbox', name='completed')
+            li: p #{foundation.buyDomain.label}
+                if(foundation.buyDomain.completed)
+                  input(type='checkbox', name='completed', checked)
+                else
+                  input(type='checkbox', name='completed')
+
+  h2 2. Discovery                
+  ul
+            li: p #{discovery.createRoadMap.label}
+                if(discovery.createRoadMap.completed)
+                  input(type='checkbox', name='completed', checked)
+                else
+                  input(type='checkbox', name='completed')
+            li: p #{discovery.competitorAnalysis.label}
+                if(discovery.competitorAnalysis.completed)
+                  input(type='checkbox', name='completed', checked)
+                else
+                  input(type='checkbox', name='completed')
+                  
+  h2 2. Delivery                
+  ul                
+            li: p #{delivery.releaseMarketingWeb.label}
+                if(delivery.releaseMarketingWeb.completed)
+                  input(type='checkbox', name='completed', checked)
+                else
+                  input(type='checkbox', name='completed')
+            li: p #{delivery.releaseMvp.label}
+                if(delivery.releaseMvp.completed)
+                  input(type='checkbox', name='completed', checked)
+                else
+                  input(type='checkbox', name='completed')                
+  
