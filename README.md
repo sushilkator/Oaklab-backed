@@ -5,7 +5,7 @@ Oaklab assignment backend
 A server app (back-end app) being an API that may update the progress of a startup foundation, discovery, and delivery. You can interact with API endpoints using `Postman`.
 
 The figure below shows an example of the interaction to find products with applied query params. All available interactions are listed in the 'Endpoints' section.
-http://localhost:2000/
+http://localhost:8080/
 
 initially, this will render a simple application layout just an HTML as per mockups 
 
