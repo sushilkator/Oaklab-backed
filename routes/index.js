@@ -3,7 +3,6 @@ const router = express.Router();
 const foundation = require('./../public/startupdata/foundation');
 const discovery = require('./../public/startupdata/discovery');
 const delivery = require('./../public/startupdata/delivery');
-/* GET home page. */
 router.get('/', function(req, res,) {
   res.render('index', { title: 'My startup progress', foundation, discovery, delivery });
 });
